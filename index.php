@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gujarati Trader</title>
+
+<style>
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at center, #0b1220, #000);
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    background: linear-gradient(180deg, #0f172a, #020617);
+    border-radius: 26px;
+    padding: 28px 22px 30px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0 0 40px rgba(0,0,0,0.8);
+}
+
+/* LOGO */
+.logo-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 14px;
+}
+.logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    background: #fff;
+    padding: 8px;
+    box-shadow: 0 0 18px rgba(255,215,0,0.5);
+}
+
+/* ANIMATED BARS */
+.bars {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 16px 0 8px;
+}
+.bar {
+    width: 10px;
+    border-radius: 6px;
+    animation: bounce 1.2s infinite ease-in-out;
+}
+.bar.blue { background: #3b82f6; height: 34px; }
+.bar.yellow { background: #facc15; height: 26px; }
+
+.bar:nth-child(1) { animation-delay: 0s; }
+.bar:nth-child(2) { animation-delay: .15s; }
+.bar:nth-child(3) { animation-delay: .3s; }
+.bar:nth-child(4) { animation-delay: .45s; }
+.bar:nth-child(5) { animation-delay: .6s; }
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+}
+
+/* TEXT */
+h1 {
+    margin: 12px 0 6px;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
+.sub {
+    color: #60a5fa;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
+
+.members {
+    margin: 12px 0;
+    color: #facc15;
+    font-weight: 600;
+}
+
+/* BUTTON */
+.btn {
+    display: block;
+    margin: 16px auto 20px;
+    width: 85%;
+    padding: 14px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #2563eb, #3b82f6);
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    box-shadow: 0 0 18px rgba(59,130,246,0.7);
+    transition: transform .2s ease;
+}
+.btn:hover {
+    transform: scale(1.03);
+}
+
+/* LIST */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+ul li {
+    margin: 10px 0;
+    font-size: 14px;
+}
+ul li::before {
+    content: "•";
+    color: #3b82f6;
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+/* DISCLAIMER */
+.footer {
+    margin-top: 18px;
+    font-size: 11px;
+    color: #9ca3af;
+    line-height: 1.4;
+}
+</style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '844513355056947');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=844513355056947&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="logo-wrap">
+        <img src="logo.png" class="logo" alt="Gujarati Trader Logo">
+    </div>
+
+    <div class="bars">
+        <div class="bar blue"></div>
+        <div class="bar yellow"></div>
+        <div class="bar blue"></div>
+        <div class="bar yellow"></div>
+        <div class="bar blue"></div>
+    </div>
+
+    <h1>GUJARATI TRADER</h1>
+    <div class="sub">BankNifty • Nifty • Stock Options</div>
+
+    <div class="members">👥 Live Members: 33856+</div>
+
+    <a class="btn" href="https://t.me/+5TXSFShjfnM5NDM1" target="_blank">
+        Join Telegram +
+    </a>
+
+    <ul>
+        <li>Advanced trading education & strategies</li>
+        <li>Daily market learning & insights</li>
+        <li>Trusted trader community on Telegram</li>
+    </ul>
+
+    <div class="footer">
+        This is for educational purposes only.<br>
+        Securities market investments are subject to market risks.
+    </div>
+
+</div>
+
+</body>
+</html>
